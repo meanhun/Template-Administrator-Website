@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: "IBMPlexSans-Medium";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Bold";
+  src: url(./assets/font/IBMPlexSans-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-BoldItalic";
+  src: url(./assets/font/IBMPlexSans-BoldItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-ExtraLight";
+  src: url(./assets/font/IBMPlexSans-ExtraLight.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-ExtraLightItalic";
+  src: url(./assets/font/IBMPlexSans-ExtraLightItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Italic";
+  src: url(./assets/font/IBMPlexSans-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Light";
+  src: url(./assets/font/IBMPlexSans-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-LightItalic";
+  src: url(./assets/font/IBMPlexSans-LightItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Medium";
+  src: url(./assets/font/IBMPlexSans-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-MediumItalic";
+  src: url(./assets/font/IBMPlexSans-MediumItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Regular";
+  src: url(./assets/font/IBMPlexSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-SemiBold";
+  src: url(./assets/font/IBMPlexSans-SemiBold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-SemiBoldItalic";
+  src: url(./assets/font/IBMPlexSans-SemiBoldItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Thin";
+  src: url(./assets/font/IBMPlexSans-Thin.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans-ThinItalic";
+  src: url(./assets/font/IBMPlexSans-ThinItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* styles.css */
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Thêm kiểu cho thiết bị di động */
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tablet,
+  .desktop {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Thêm kiểu cho thiết bị tablet */
+  .mobile,
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  /* Thêm kiểu cho thiết bị desktop */
+  .mobile,
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    align-items: center;
+  }
+}

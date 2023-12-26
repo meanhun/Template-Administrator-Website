@@ -1,0 +1,16 @@
+/* .ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  background-color: #586a8c !important;
+  color: #1677ff !important;
+} */
+
+/* Đổi màu và màu nền khi mục menu được chọn */
+.ant-menu-item-selected,
+.ant-menu-submenu-title-selected {
+  background-color: #0c4da0 !important;
+  color: #ffffff !important;
+}
+
+.ant-menu-submenu.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #0c4da0 !important;
+}
