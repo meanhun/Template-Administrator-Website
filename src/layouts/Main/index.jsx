@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import { Avatar, Layout, Menu, Select, Space } from "antd";
 import { MenuUnfoldOutlined, UserOutlined } from "@ant-design/icons";
 import { AppContext } from "../../contexts/AppContext";
@@ -59,16 +59,16 @@ function MainLayout(props) {
 
   //! <>==========================<HANDLE>==================<>
 
-  useEffect(() => {
-    i18next.changeLanguage(selectedLanguage);
-  }, [selectedLanguage]);
+  const handleLogoutCallback = useCallback(() => {
+    handleLogout();
+  }, [handleLogout]);
 
   useEffect(() => {
-    console.log(activeMenuItem);
+    i18next.changeLanguage(selectedLanguage);
     if (activeMenuItem === SAVE_KEYS.LOGOUT) {
-      handleLogout();
+      handleLogoutCallback();
     }
-  }, [activeMenuItem]);
+  }, [selectedLanguage, activeMenuItem, handleLogoutCallback]);
 
   return (
     <>
