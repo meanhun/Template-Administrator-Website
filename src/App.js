@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import LoginScreen from "./screens/Login";
 import { AppContext } from "./contexts/AppContext";
 import { ROUTES } from "./Routes/Route";
-import DashboardScreen from "./layouts/Dashboard";
+import DashboardScreen from "./screens/Dashboard";
 
 // function Dashboard() {
 //   const { t } = useTranslation();
